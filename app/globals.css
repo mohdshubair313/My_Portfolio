@@ -1,0 +1,21 @@
+/* global.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%; /* Default light mode background */
+    --foreground: 222.2 84% 4.9%; /* Default light mode text color */
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%; /* Dark mode background */
+    --foreground: 210 40% 98%; /* Dark mode text color */
+  }
+
+  body {
+    background-color: hsl(var(--background)); /* Dynamically changes background */
+    color: hsl(var(--foreground)); /* Dynamically changes text color */
+  }
+}
